@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d94f7b">
+  <meta name="description" content="A birthday surprise for the most wonderful mumma, made with love by Vaanya.">
+  <title>Happy Birthday, Mumma! 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23fff4f6'/%3E%3Cpath d='M32 51S10 39 10 23c0-12 15-16 22-5 7-11 22-7 22 5 0 16-22 28-22 28Z' fill='%23d94f7b'/%3E%3C/svg%3E">
+  <style>
+    :root{--berry:#9f2754;--rose:#d94f7b;--pink:#f7b9ca;--blush:#fff2f5;--cream:#fffaf4;--ink:#51263a;--white:#fff;--shadow:0 24px 70px rgba(122,38,71,.17)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:var(--blush);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(#d94f7b 0.7px,transparent .7px);background-size:18px 18px;mask-image:linear-gradient(to bottom,#000,transparent 65%)}
+    .wrap{position:relative;isolation:isolate;min-height:100vh}
+    .float{position:absolute;color:var(--rose);opacity:.5;animation:drift 5s ease-in-out infinite;font-size:clamp(1rem,3vw,2rem);user-select:none}
+    .f1{top:9%;left:6%}.f2{top:22%;right:8%;animation-delay:-2s}.f3{top:52%;left:4%;animation-delay:-1s}.f4{top:68%;right:5%;animation-delay:-3.4s}.f5{top:84%;left:10%;animation-delay:-4.2s}
+    @keyframes drift{50%{transform:translateY(-12px) rotate(7deg)}}
+    header{min-height:92vh;display:grid;place-items:center;padding:50px 20px 70px;text-align:center}
+    .hero{max-width:850px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid rgba(159,39,84,.18);border-radius:999px;background:rgba(255,255,255,.65);font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--berry)}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(4rem,12vw,8.5rem);line-height:.86;letter-spacing:-.055em;margin:30px 0 20px;color:var(--berry)}
+    h1 em{display:block;color:var(--rose);font-weight:600}
+    .lead{font-size:clamp(1.05rem,2.5vw,1.35rem);line-height:1.75;max-width:650px;margin:0 auto;color:#714359}
+    .scroll{margin-top:42px;display:inline-flex;align-items:center;gap:10px;color:var(--berry);text-decoration:none;font-weight:700;border-bottom:2px solid var(--pink);padding:8px 3px}
+    main{padding:0 20px 90px}
+    section{max-width:980px;margin:0 auto 28px}
+    .letter{background:rgba(255,255,255,.88);border:1px solid rgba(159,39,84,.12);border-radius:34px;padding:clamp(30px,7vw,72px);box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .letter:after{content:"♥";position:absolute;right:-15px;bottom:-65px;font-size:13rem;color:var(--blush);transform:rotate(-15deg);z-index:-1}
+    .kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);font-weight:700}
+    h2{font-family:"Playfair Display",serif;color:var(--berry);font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.1;margin:12px 0 24px}
+    .letter p{font-family:"Playfair Display",serif;font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.85;margin:0 0 16px}
+    .sign{margin-top:28px!important;color:var(--rose);font-style:italic;font-weight:700}
+    .reasons{padding:65px 0 20px;text-align:center}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;text-align:left}
+    .card{background:var(--cream);border:1px solid rgba(159,39,84,.1);border-radius:24px;padding:26px;min-height:180px;transition:transform .25s ease,box-shadow .25s ease}
+    .card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(122,38,71,.12)}
+    .icon{font-size:1.65rem}.card h3{font-family:"Playfair Display",serif;color:var(--berry);font-size:1.4rem;margin:17px 0 8px}.card p{margin:0;line-height:1.65;color:#714359}
+    .memories{padding:65px 0 38px;text-align:center}
+    .memory-intro{max-width:620px;margin:0 auto;color:#714359;font-size:1.05rem;line-height:1.7}
+    .photo-corner{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:38px;align-items:center}
+    .polaroid{grid-column:span 4;background:#fff;padding:12px;border-radius:5px;box-shadow:0 14px 34px rgba(93,34,58,.17);transform:rotate(var(--tilt));position:relative;transition:transform .25s ease;min-width:0}
+    .polaroid:hover{transform:rotate(0) translateY(-6px);z-index:2}
+    .polaroid:nth-child(1){--tilt:-3deg}.polaroid:nth-child(2){--tilt:2.5deg}.polaroid:nth-child(3){--tilt:-1.5deg}.polaroid:nth-child(4){--tilt:2deg}.polaroid:nth-child(5){--tilt:-2.5deg}.polaroid:nth-child(6){--tilt:1.5deg}
+    .photo-frame{aspect-ratio:4/5;background:linear-gradient(135deg,#ffe1e9,#fff5f7);display:grid;place-items:center;overflow:hidden;color:var(--berry);font-weight:700}
+    .photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+    .photo-frame.missing img{display:none}.photo-frame:not(.missing) .photo-placeholder{display:none}
+    .photo-placeholder{padding:18px;font-size:.9rem;line-height:1.5}
+    .video-section{margin-top:36px;background:rgba(255,255,255,.86);border:1px solid rgba(159,39,84,.12);border-radius:34px;padding:clamp(28px,6vw,58px);text-align:center;box-shadow:var(--shadow)}
+    .video-wrap{max-width:760px;margin:28px auto 0;aspect-ratio:16/9;border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#9f2754,#d94f7b);display:grid;place-items:center;position:relative}
+    .video-wrap video{width:100%;height:100%;object-fit:cover;background:#30101d}
+    .video-wrap.missing video{display:none}.video-wrap:not(.missing) .video-placeholder{display:none}
+    .video-placeholder{color:#fff;padding:26px}.video-placeholder span{display:block;font-size:2.5rem;margin-bottom:10px}.video-placeholder strong{display:block;font-family:"Playfair Display",serif;font-size:1.35rem;margin-bottom:8px}.video-placeholder small{font-size:.9rem;color:#ffe2ea}
+    .surprise{text-align:center;background:var(--berry);color:var(--white);border-radius:34px;padding:clamp(38px,7vw,70px) 22px;box-shadow:var(--shadow)}
+    .surprise h2{color:var(--white);margin-top:0}.surprise>p{color:#ffdce6;font-size:1.08rem}
+    button{border:0;border-radius:999px;background:var(--white);color:var(--berry);font:700 1rem "DM Sans",sans-serif;padding:16px 25px;margin-top:16px;cursor:pointer;box-shadow:0 8px 22px rgba(49,8,25,.22);transition:transform .2s ease}
+    button:hover{transform:scale(1.04)}button:focus-visible{outline:4px solid var(--pink);outline-offset:4px}
+    .secret{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s ease,margin .55s ease;margin:0 auto;max-width:650px}
+    .secret>div{overflow:hidden}.secret.open{grid-template-rows:1fr;margin-top:28px}
+    .secret p{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);padding:22px;border-radius:20px;line-height:1.75;margin:0;font-family:"Playfair Display",serif;font-size:1.18rem}
+    .confetti{position:fixed;top:-20px;z-index:20;pointer-events:none;animation:fall 2.6s linear forwards;font-size:1.3rem}
+    @keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.15}}
+    footer{text-align:center;padding:18px 20px 45px;color:#8b5d70;font-size:.92rem}
+    @media(max-width:720px){header{min-height:82vh}.cards{grid-template-columns:1fr}.card{min-height:auto}.float{opacity:.3}.letter,.surprise,.video-section{border-radius:26px}.photo-corner{gap:12px}.polaroid{grid-column:span 6;padding:8px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.float,.confetti{animation:none!important}.card,button{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="float f1">♥</span><span class="float f2">✦</span><span class="float f3">♥</span><span class="float f4">✿</span><span class="float f5">✦</span>
+    <header>
+      <div class="hero">
+        <div class="eyebrow">A little page for my favorite person</div>
+        <h1>Happy Birthday,<em>Mumma!</em></h1>
+        <p class="lead">Today is all about celebrating the woman who makes every ordinary day feel warmer, safer, and so much more beautiful.</p>
+        <a class="scroll" href="#letter">Open your birthday letter ↓</a>
+      </div>
+    </header>
+    <main>
+      <section class="letter" id="letter">
+        <div class="kicker">To the heart of our home</div>
+        <h2>Dear Mumma,</h2>
+        <p>Hi Mumma, HAPPY BIRTHDAY!!!</p>
+        <p>Since you’re the one who got me into coding, I thought it was only fair that I coded a little website for you hehe.</p>
+        <p>I love you so much. Thank you for everything you have ever done for me. I miss you more than I could ever explain in words. I miss your hugs, running to you whenever I got tired of studying, coming home and immediately looking for you. I just miss your presence and the feeling of having you close.</p>
+        <p>Most of all, thank you for being strong enough to send me so far away, and for giving me the strength to work hard every day even when it is difficult. No one could ever replace the love I have for you in my heart. Thank you for being the best mumma I could ever ask for.</p>
+        <p class="sign">Love you always,<br>Vaanya ♡</p>
+      </section>
+
+      <section class="reasons">
+        <div class="kicker">Just a few of a million reasons</div>
+        <h2>Why you’re so loved</h2>
+        <div class="cards">
+          <article class="card"><div class="icon">🫶</div><h3>Your warmth</h3><p>You make every place feel safe, welcoming, and instantly like home.</p></article>
+          <article class="card"><div class="icon">✨</div><h3>Your strength</h3><p>You handle so much with grace and inspire me more than you know.</p></article>
+          <article class="card"><div class="icon">🌷</div><h3>Your love</h3><p>It shows up in a thousand little ways, and I’m grateful for every one.</p></article>
+        </div>
+      </section>
+
+      <section class="memories" id="memories">
+        <div class="kicker">My favorite memories</div>
+        <h2>Little moments, forever favorites</h2>
+        <p class="memory-intro">Every photo with you holds a story I never want to forget. Here are a few pieces of us that always make me smile.</p>
+        <div class="photo-corner" aria-label="Photos of Mumma and Vaanya">
+          <figure class="polaroid"><div class="photo-frame"><img src="assets/photos/photo-1.jpg" alt="A childhood memory with Mumma"><span class="photo-placeholder">Add photo-1.jpg</span></div></figure>
+          <figure class="polaroid"><div class="photo-frame"><img src="assets/photos/photo-2.jpg" alt="Vaanya and Mumma together"><span class="photo-placeholder">Add photo-2.jpg</span></div></figure>
+          <figure class="polaroid"><div class="photo-frame"><img src="assets/photos/photo-3.jpg" alt="Vaanya and Mumma dressed for a celebration"><span class="photo-placeholder">Add photo-3.jpg</span></div></figure>
+          <figure class="polaroid"><div class="photo-frame"><img src="assets/photos/photo-4.jpg" alt="A childhood family memory"><span class="photo-placeholder">Add photo-4.jpg</span></div></figure>
+          <figure class="polaroid"><div class="photo-frame"><img src="assets/photos/photo-5.jpg" alt="Mumma with her daughters"><span class="photo-placeholder">Add photo-5.jpg</span></div></figure>
+          <figure class="polaroid"><div class="photo-frame"><img src="assets/photos/photo-6.jpg" alt="Vaanya and Mumma smiling together"><span class="photo-placeholder">Add photo-6.jpg</span></div></figure>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="kicker">A message just for you</div>
+        <h2>Press play, Mumma 💌</h2>
+        <div class="video-wrap">
+          <video controls playsinline preload="metadata" aria-label="Vaanya's birthday message for Mumma">
+            <source src="assets/videos/birthday-message.mp4" type="video/mp4">
+          </video>
+          <div class="video-placeholder"><span>🎥</span><strong>Your birthday video goes here</strong><small>Add assets/videos/birthday-message.mp4</small></div>
+        </div>
+      </section>
+
+      <section class="surprise">
+        <h2>One tiny surprise…</h2>
+        <p>Because one birthday wish is never enough.</p>
+        <button id="surpriseBtn" aria-expanded="false" aria-controls="secret">Tap for extra love 💌</button>
+        <div class="secret" id="secret"><div><p>May your day be full of your favorite things, zero stress, lots of laughter, and the reminder that you are loved beyond words. Happy birthday, Mumma! 🎂💗</p></div></div>
+      </section>
+    </main>
+    <footer>Made with a whole lot of love by Vaanya · <span id="year"></span></footer>
+  </div>
+  <script>
+    const button=document.getElementById('surpriseBtn');
+    const secret=document.getElementById('secret');
+    document.querySelectorAll('.photo-frame img').forEach(img=>{
+      const frame=img.closest('.photo-frame');
+      img.addEventListener('error',()=>frame.classList.add('missing'));
+      img.addEventListener('load',()=>frame.classList.remove('missing'));
+      if(img.complete&&!img.naturalWidth) frame.classList.add('missing');
+    });
+    const video=document.querySelector('.video-wrap video');
+    const videoWrap=video.closest('.video-wrap');
+    video.addEventListener('error',()=>videoWrap.classList.add('missing'));
+    video.addEventListener('loadedmetadata',()=>videoWrap.classList.remove('missing'));
+    videoWrap.classList.add('missing');
+    button.addEventListener('click',()=>{
+      const open=secret.classList.toggle('open');
+      button.setAttribute('aria-expanded',String(open));
+      button.textContent=open?'Love you, Mumma! 💗':'Tap for extra love 💌';
+      if(open&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        const pieces=['💗','✨','🌸','♥'];
+        for(let i=0;i<28;i++){
+          const bit=document.createElement('span');bit.className='confetti';bit.textContent=pieces[i%pieces.length];
+          bit.style.left=Math.random()*100+'vw';bit.style.animationDelay=Math.random()*.7+'s';bit.style.animationDuration=2+Math.random()*1.8+'s';
+          document.body.appendChild(bit);setTimeout(()=>bit.remove(),4500);
+        }
+      }
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
